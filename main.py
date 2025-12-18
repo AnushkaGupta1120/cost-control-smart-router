@@ -83,4 +83,5 @@ def get_logs(db: Session = Depends(get_db)):
     logs = db.query(RequestLog).order_by(RequestLog.timestamp.desc()).limit(50).all()
     return logs
 
+from mangum import Mangum
 handler = Mangum(app)
