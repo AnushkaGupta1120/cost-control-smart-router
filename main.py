@@ -82,3 +82,5 @@ def get_logs(db: Session = Depends(get_db)):
     # Fetch last 50 requests
     logs = db.query(RequestLog).order_by(RequestLog.timestamp.desc()).limit(50).all()
     return logs
+
+handler = Mangum(app)
