@@ -1,0 +1,13 @@
+# Environment secrets
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Node dependencies
+node_modules/
+smart-router-ui/node_modules/
+
+# OS/editor
+.DS_Store
